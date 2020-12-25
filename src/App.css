@@ -1,0 +1,19 @@
+.navbar {
+    background-color: red;
+    padding: 10px;
+}
+
+.navitem {
+    color: white;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.item {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
