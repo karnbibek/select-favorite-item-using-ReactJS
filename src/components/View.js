@@ -1,10 +1,10 @@
+/* eslint-disable */
 import React, { useEffect, useState } from 'react';
 import { IoIosHeart, IoIosHeartEmpty } from "react-icons/io";
 
 const View = ({ planet, index }) => {
     const [favorites, setFavorites] = useState([]);
     const [update, setUpdate] = useState(false);
-
     const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
     useEffect(() => {
         if (getArray !== 0) {
@@ -22,6 +22,7 @@ const View = ({ planet, index }) => {
                 addArray = false;
                 return null;
             }
+            return null;
         });
         if (addArray) {
             array.push(props.index);
